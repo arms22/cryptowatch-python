@@ -89,7 +89,7 @@ class OrderBook():
 
 class Candle():
     def __init__(self, json, period_milliseconds):
-        self.close_time, self.open, self.high, self.low, self.close, self.volume = json
+        self.close_time, self.open, self.high, self.low, self.close, self.volume, dammy = json
         self.open_time = self.close_time - period_milliseconds
         
     def GetOpenDateTime(self):
